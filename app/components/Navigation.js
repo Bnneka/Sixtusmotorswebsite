@@ -1,0 +1,4 @@
+'use client';
+import {useState} from 'react';
+import {usePathname} from 'next/navigation';
+export default function Navigation(){const pathname=usePathname();const [open,setOpen]=useState(false);return <header><a className="brand brand-logo" href="/" aria-label="SIXTUS MOTORS home"><img src="/images/company-logo.webp" alt="SIXTUS MOTORS NIGERIA LTD company logo" width="160" height="150"/></a><button className="menu" aria-label="Toggle navigation" aria-expanded={open} onClick={()=>setOpen(!open)}>{open?'✕':'☰'}</button><nav aria-label="Main navigation" className={open?'open':''}>{[['Home','/'],['Services','/services'],['Our Fleet','/fleet'],['About Us','/about'],['Contact','/contact']].map(([t,l])=><a key={l} href={l} aria-current={pathname===l?'page':undefined} className={pathname===l?'nav-active':undefined} onClick={()=>setOpen(false)}>{t}</a>)}</nav></header>}
