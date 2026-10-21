@@ -1,1 +1,14 @@
-{"name":"sixtus-motors","private":true,"scripts":{"dev":"next dev --hostname 127.0.0.1","build":"next build","start":"next start"},"dependencies":{"@next/swc-win32-x64-msvc":"^16.4.2","next":"^16.4.2","react":"^19.1.0","react-dom":"^19.1.0"}}
+{
+  "name": "sixtus-motors",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^16.4.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
